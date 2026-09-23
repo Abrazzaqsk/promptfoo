@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "node init && vite",
     "tsc": "tsc",
-    "build": "tsc -b && vite build",
-    "build:watch": "tsc -b --watch",
+    "build": "node init && tsc -b && vite build",
+    "build:watch": "node init && tsc -b --watch",
     "lint": "cd ../.. && npx @biomejs/biome lint src/app",
     "preview": "vite preview",
     "test": "vitest",
